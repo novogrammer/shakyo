@@ -2,7 +2,6 @@
 require "shakyo/version"
 require "readline"
 require "curses"
-require "io/console"
 
 module Shakyo
   class Viewer
@@ -45,7 +44,7 @@ module Shakyo
       def run
         Curses.init_screen
         begin
-          IO.console.echo=true
+          Curses.echo
           while buf = my_readline
               case buf.chomp
                 when "prev"
