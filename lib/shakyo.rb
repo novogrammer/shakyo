@@ -8,7 +8,6 @@ module Shakyo
   class Viewer
       def initialize(filename)
         @filename=filename
-        #@source_lines=IO.readlines(@filename).map{|line|line.force_encoding("euc-jp")}
         @source_lines=IO.readlines(@filename)
         @pos=0
       end

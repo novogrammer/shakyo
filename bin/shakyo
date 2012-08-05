@@ -3,7 +3,7 @@
 require "shakyo"
 
 if ARGV.length<1
-  puts "usage: #{$PROGRAM_NAME} src/foo.rb"
+  puts "usage: shakyo src/foo.rb"
 else
   Shakyo::Viewer.new(ARGV[0]).run
 end

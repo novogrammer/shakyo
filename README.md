@@ -1,29 +1,34 @@
 # Shakyo
 
-TODO: Write a gem description
+写経する為のプログラムです。
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'shakyo'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install shakyo
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ shakyo ./hello.c
 
-## Contributing
+## Howto
+      #include<stdio.h>
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+    ->int main(void)
+      {
+            printf("hello! world!\n");
+            return 0;
+      }
+    ----------------
+    ->int main(void)
+    > int main(vo
+    ./hello.c:3/8 (COMMAND LIST: next prev quit)
+
+* (該当行を入力)[Enter]
+  * 次の行へ移ります
+* next[Enter]
+  * 次の行へ移ります
+* prev[Enter]
+  * 前の行へ移ります
+* quit[Enter]
+  * 終了します
+
