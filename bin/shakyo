@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+#coding: utf-8
+require "shakyo"
+
+if ARGV.length<1
+  puts "usage: #{$PROGRAM_NAME} src/foo.rb"
+else
+  Shakyo::Viewer.new(ARGV[0]).run
+end
+
